@@ -18,3 +18,6 @@ En el fragmento los medios de pago están en un `if / else if` que compara texto
 ## Prototype (reto extra, `Pedido.clonar()`)
 
 Este no sale del fragmento sino del botón "Repetir mi último pedido". Sin el patrón habría que volver a pasar todos los datos del pedido anterior por el Builder. Con `clonar()` el mismo pedido se copia: pide un número nuevo, deja el cupón en 0 y crea una lista de ítems nueva para que agregarle algo al clon no cambie el original. No lo usaríamos cuando el objeto es fácil de crear desde cero o cuando casi todos sus datos van a ser diferentes, porque copiar para después cambiar todo no ahorra nada.
+
+
+<img width="4360" height="3674" alt="diagrama" src="https://github.com/user-attachments/assets/a8bb737c-c30e-4742-a5de-bf116c350587" />
