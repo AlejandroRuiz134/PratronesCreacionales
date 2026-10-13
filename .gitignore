@@ -1,0 +1,18 @@
+# Compiled Java files
+bin/
+out/
+target/
+*.class
+
+# Eclipse project metadata
+.classpath
+.project
+.settings/
+
+# VS Code local files (keep project settings)
+.vscode/
+!.vscode/settings.json
+
+# Operating system files
+.DS_Store
+Thumbs.db
