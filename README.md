@@ -2,7 +2,7 @@
 
 **Taller integrador: patrones creacionales**
 David Santiago Tellez Melo - 20242020107
-
+Luis Alejandro Ruiz Gomez - 20242020134
 ## Singleton (`GeneradorConsecutivo`)
 
 En el fragmento hay un `private static int contador = 0` que se repite en cada clase que necesita numerar algo. El problema es que cada clase lleva su propia cuenta, entonces dos partes del programa pueden terminar generando el mismo `PED-0001`. Con el Singleton solo existe un generador en todo el programa y todos le piden el número a él, así que los consecutivos nunca se repiten. Además, como el número se pide dentro de `construir()` después de validar, un pedido rechazado no gasta número. No lo usaríamos en una clase que no necesita ser única ni guarda un estado compartido, por ejemplo `ItemPedido`: ahí tiene que haber muchos objetos distintos y obligar a que exista uno solo no tendría sentido.
